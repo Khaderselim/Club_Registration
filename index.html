@@ -1,0 +1,130 @@
+<title>Portail d'Inscription &aacute; un Club</title>
+<link rel="stylesheet" href="style.css">
+
+<header class="header">
+    <div class="logo">
+        <h1>Portail d'Inscription &agrave; un Club</h1>
+    </div>
+    <p>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</p>
+</header>
+<form action="index2.html" method="post" class="form-container">
+    <section class="form-section">
+        <div class="section-title">
+        <h2> Informations Personnelles</h2>
+        </div>
+        <div class="form-group">
+            <div class="form-group">
+                <label for="firstName" class="required">First Name</label>
+                <input type="text" id="firstName" placeholder="Enter first name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="lastName" class="required">Last Name</label>
+                <input type="text" id="lastName" placeholder="Enter last name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="CIN" class="required">CIN</label>
+                <input type="text" id="CIN" placeholder="12345678" pattern="[0-9]{8 }" title="Le CIN doit comporter exactement 8 chiffres." required>
+            </div>
+            <div class="form-group">
+                <label for="dob" class="required">Date of Birth</label>
+                <input type="date" id="dob" required>
+            </div>
+            <div class="form-group">
+                <label for="gender" class="required">Gender</label>
+                <select id="gender" required>
+                    <option value="">Select Gender</option>
+                    <option value="Homme">Homme</option>
+                    <option value="Femme">Femme</option>
+                </select>
+            </div>
+        </div>
+    </section>
+    <section class="form-section">
+        <div class="section-title">
+            <h2>Choix du Club</h2>
+        </div>
+
+        <div class="form-group">
+            <label for="clubType" class="required">Type de Club</label>
+            <select id="clubType" name="clubType" required>
+                <option value="">S&eacute;lectionnez un type...</option>
+                <option value="sport">Sports</option>
+                <option value="culture">Culture</option>
+                <option value="art">Arts</option>
+                <option value="science">Sciences & Technologie</option>
+                <option value="social">Social & B&eacute;n&eacute;volat</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="preferredClub" class="required">Club Pr&eacute;f&eacute;r&eacute;</label>
+            <select id="preferredClub" name="preferredClub" required>
+                <option value="">S&eacute;lectionnez un club...</option>
+                <option value="football">Football</option>
+                <option value="basketball">Basketball</option>
+                <option value="theatre">Th&eacute;&acirc;tre</option>
+                <option value="musique">Musique</option>
+                <option value="photographie">Photographie</option>
+                <option value="robotique">Robotique</option>
+                <option value="debat">D&eacute;bat</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="experienceLevel">Niveau d'Exp&eacute;rience</label>
+            <select id="experienceLevel" name="experienceLevel">
+                <option value="debutant">D&eacute;butant</option>
+                <option value="intermediaire">Interm&eacute;diaire</option>
+                <option value="avance">Avanc&eacute;</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="motivation">Pourquoi souhaitez-vous rejoindre ce club ?</label>
+            <textarea id="motivation" name="motivation" rows="4" placeholder="Parlez-nous de votre motivation..."></textarea>
+        </div>
+    </section>
+    <section class="form-section">
+        <div class="section-title">
+            <h2>Coordonn&eacute;es</h2>
+        </div>
+
+        <div class="form-group">
+            <label for="email" class="required">Email</label>
+            <input type="email" id="email" name="email" placeholder="exemple@email.com" required>
+        </div>
+
+        <div class="form-group">
+            <label for="phone" class="required">T&eacute;l&eacute;phone</label>
+            <input type="tel" id="phone" name="phone" placeholder="+216 12 345 678" required>
+        </div>
+
+        <div class="form-group">
+            <label for="address">Adresse (Ligne 1)</label>
+            <input type="text" id="address" name="address" placeholder="Rue, num&eacute;ro" autocomplete="address-line1">
+        </div>
+
+        <div class="form-group">
+            <label for="city">Ville</label>
+            <input type="text" id="city" name="city" placeholder="Tunis" autocomplete="address-level2">
+        </div>
+
+        <div class="form-group">
+            <label for="zip">Code Postal</label>
+            <input type="text" id="zip" name="zip" placeholder="1000" autocomplete="postal-code">
+        </div>
+
+        <div class="form-group">
+            <label for="country">Pays</label>
+            <input type="text" id="country" name="country" placeholder="Tunisie" autocomplete="country-name">
+        </div>
+    </section>
+    <div class="buttons">
+        <input type="submit" value="Submit" class="submit-btn">
+        <input type="reset" value="Reset" class="reset-btn">
+
+    </div>
+
+</form>
