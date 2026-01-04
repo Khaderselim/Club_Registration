@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+<header>
+    <div class="container">
+        <a href="index.html" class="logo">LOGO</a>
+        <ul class="menu">
+            <li><a href="index.html" >Home</a></li>
+            <li><a href="index.html#service">Services</a></li>
+            <li><a href="index.html#about">About Us</a></li>
+            <li><a href="Forum.html" class="active">Forum </a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </div>
+</header>
+
+<main>
+    <form action="Forum.html" method="post" class="form-container">
+        <section class="form-section">
+            <div class="section-title">
+                <h2>Informations Personnelles</h2>
+            </div>
+
+            <div class="form-group">
+                <label for="firstName" class="required">First Name</label>
+                <input type="text" id="firstName" placeholder="Enter first name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="lastName" class="required">Last Name</label>
+                <input type="text" id="lastName" placeholder="Enter last name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="CIN" class="required">CIN</label>
+                <input type="text" id="CIN" placeholder="12345678" pattern="[0-9]{8}" title="Le CIN doit comporter exactement 8 chiffres." required>
+            </div>
+
+            <div class="form-group">
+                <label for="dob" class="required">Date of Birth</label>
+                <input type="date" id="dob" required>
+            </div>
+
+            <div class="form-group">
+                <label for="gender" class="required">Gender</label>
+                <select id="gender" required>
+                    <option value="">Select Gender</option>
+                    <option value="Homme">Homme</option>
+                    <option value="Femme">Femme</option>
+                </select>
+            </div>
+        </section>
+
+        <section class="form-section">
+            <div class="section-title">
+                <h2>Choix du Club</h2>
+            </div>
+
+            <div class="form-group">
+                <label for="clubType" class="required">Type de Club</label>
+                <select id="clubType" name="clubType" required>
+                    <option value="">Sélectionnez un type...</option>
+                    <option value="sport">Sports</option>
+                    <option value="culture">Culture</option>
+                    <option value="art">Arts</option>
+                    <option value="science">Sciences & Technologie</option>
+                    <option value="social">Social & Bénévolat</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="preferredClub" class="required">Club Préféré</label>
+                <select id="preferredClub" name="preferredClub" required>
+                    <option value="">Sélectionnez un club...</option>
+                    <option value="football">Football</option>
+                    <option value="basketball">Basketball</option>
+                    <option value="theatre">Théâtre</option>
+                    <option value="musique">Musique</option>
+                    <option value="photographie">Photographie</option>
+                    <option value="robotique">Robotique</option>
+                    <option value="debat">Débat</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="experienceLevel">Niveau d'Expérience</label>
+                <select id="experienceLevel" name="experienceLevel">
+                    <option value="debutant">Débutant</option>
+                    <option value="intermediaire">Intermédiaire</option>
+                    <option value="avance">Avancé</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="motivation">Pourquoi souhaitez-vous rejoindre ce club ?</label>
+                <textarea id="motivation" name="motivation" rows="4" placeholder="Parlez-nous de votre motivation..."></textarea>
+            </div>
+        </section>
+
+        <section class="form-section">
+            <div class="section-title">
+                <h2>Coordonnées</h2>
+            </div>
+
+            <div class="form-group">
+                <label for="email" class="required">Email</label>
+                <input type="email" id="email" name="email" placeholder="exemple@email.com" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone" class="required">Téléphone</label>
+                <input type="tel" id="phone" name="phone" placeholder="+216 12 345 678" required>
+            </div>
+
+            <div class="form-group">
+                <label for="address">Adresse (Ligne 1)</label>
+                <input type="text" id="address" name="address" placeholder="Rue, numéro" autocomplete="address-line1">
+            </div>
+
+            <div class="form-group">
+                <label for="city">Ville</label>
+                <input type="text" id="city" name="city" placeholder="Tunis" autocomplete="address-level2">
+            </div>
+
+            <div class="form-group">
+                <label for="zip">Code Postal</label>
+                <input type="text" id="zip" name="zip" placeholder="1000" autocomplete="postal-code">
+            </div>
+
+            <div class="form-group">
+                <label for="country">Pays</label>
+                <input type="text" id="country" name="country" placeholder="Tunisie" autocomplete="country-name">
+            </div>
+        </section>
+
+        <div class="buttons">
+            <input type="submit" value="Submit" class="submit-btn">
+            <input type="reset" value="Reset" class="reset-btn">
+        </div>
+    </form>
+</main>
+
+<footer id="contact">
+    <h2>Contact Us</h2>
+    <hr>
+    <div class="contact-info">
+        <p><span>Email:</span> <a href="mailto:info@company.com">info@company.com</a></p>
+        <p><span>Phone:</span> <a href="tel:+1234567890">+123 456 7890</a></p>
+        <p><span>Address:</span> <a href="#">123 Club Street, City, Country</a></p>
+        <p><span>Facebook:</span> <a href="#">facebook.com/company</a></p>
+    </div>
+</footer>
+</body>
+</html>
