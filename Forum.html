@@ -23,7 +23,7 @@
     <form action="Forum.html" method="post" class="form-container">
         <section class="form-section">
             <div class="section-title">
-                <h2>Informations Personnelles</h2>
+                <h2>Personal Information</h2>
             </div>
 
             <div class="form-group">
@@ -50,61 +50,60 @@
                 <label for="gender" class="required">Gender</label>
                 <select id="gender" required>
                     <option value="">Select Gender</option>
-                    <option value="Homme">Homme</option>
-                    <option value="Femme">Femme</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
                 </select>
             </div>
         </section>
 
         <section class="form-section">
             <div class="section-title">
-                <h2>Choix du Club</h2>
+                <h2>Club Selection</h2>
             </div>
 
             <div class="form-group">
-                <label for="clubType" class="required">Type de Club</label>
+                <label for="clubType" class="required">Type of Club</label>
                 <select id="clubType" name="clubType" required>
-                    <option value="">Sélectionnez un type...</option>
+                    <option value="">Select a type...</option>
                     <option value="sport">Sports</option>
                     <option value="culture">Culture</option>
                     <option value="art">Arts</option>
-                    <option value="science">Sciences & Technologie</option>
-                    <option value="social">Social & Bénévolat</option>
+                    <option value="science">Science & Technology</option>
+                    <option value="social">Social & Volunteering</option>
                 </select>
             </div>
 
             <div class="form-group">
-                <label for="preferredClub" class="required">Club Préféré</label>
+                <label for="preferredClub" class="required">Preferred Club</label>
                 <select id="preferredClub" name="preferredClub" required>
-                    <option value="">Sélectionnez un club...</option>
+                    <option value="">Select a type...</option>
                     <option value="football">Football</option>
                     <option value="basketball">Basketball</option>
-                    <option value="theatre">Théâtre</option>
-                    <option value="musique">Musique</option>
-                    <option value="photographie">Photographie</option>
-                    <option value="robotique">Robotique</option>
-                    <option value="debat">Débat</option>
+                    <option value="drama">Drama</option>
+                    <option value="music">Music</option>
+                    <option value="photography">Photograph</option>
+                    <option value="robotic">Robotic</option>
                 </select>
             </div>
 
             <div class="form-group">
-                <label for="experienceLevel">Niveau d'Expérience</label>
+                <label for="experienceLevel">Level of Experience</label>
                 <select id="experienceLevel" name="experienceLevel">
-                    <option value="debutant">Débutant</option>
-                    <option value="intermediaire">Intermédiaire</option>
-                    <option value="avance">Avancé</option>
+                    <option value="beginner">Beginner</option>
+                    <option value="intermediate">Intermediate</option>
+                    <option value="advanced">Advanced</option>
                 </select>
             </div>
 
             <div class="form-group">
-                <label for="motivation">Pourquoi souhaitez-vous rejoindre ce club ?</label>
-                <textarea id="motivation" name="motivation" rows="4" placeholder="Parlez-nous de votre motivation..."></textarea>
+                <label for="motivation">Why do you wish to join this club?</label>
+                <textarea id="motivation" name="motivation" rows="4" placeholder="Tell us about your motivation..."></textarea>
             </div>
         </section>
 
         <section class="form-section">
             <div class="section-title">
-                <h2>Coordonnées</h2>
+                <h2>Contact details</h2>
             </div>
 
             <div class="form-group">
@@ -113,27 +112,27 @@
             </div>
 
             <div class="form-group">
-                <label for="phone" class="required">Téléphone</label>
+                <label for="phone" class="required">Phone</label>
                 <input type="tel" id="phone" name="phone" placeholder="+216 12 345 678" required>
             </div>
 
             <div class="form-group">
-                <label for="address">Adresse (Ligne 1)</label>
-                <input type="text" id="address" name="address" placeholder="Rue, numéro" autocomplete="address-line1">
+                <label for="address">Address (Ligne 1)</label>
+                <input type="text" id="address" name="address" placeholder="street, number" autocomplete="address-line1">
             </div>
 
             <div class="form-group">
-                <label for="city">Ville</label>
+                <label for="city">City</label>
                 <input type="text" id="city" name="city" placeholder="Tunis" autocomplete="address-level2">
             </div>
 
             <div class="form-group">
-                <label for="zip">Code Postal</label>
+                <label for="zip">Zip Code</label>
                 <input type="text" id="zip" name="zip" placeholder="1000" autocomplete="postal-code">
             </div>
 
             <div class="form-group">
-                <label for="country">Pays</label>
+                <label for="country">Country</label>
                 <input type="text" id="country" name="country" placeholder="Tunisie" autocomplete="country-name">
             </div>
         </section>
