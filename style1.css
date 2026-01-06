@@ -88,6 +88,10 @@ main {
     transform: translateY(-5px);
 }
 
+.form-group {
+    margin-bottom: 20px;
+}
+
 .section-title {
     display: flex;
     align-items: center;
@@ -101,9 +105,6 @@ main {
     font-size: 1.4rem;
 }
 
-.form-group {
-    margin-bottom: 20px;
-}
 
 label {
     display: block;
@@ -185,6 +186,8 @@ footer h2 {
     text-align: left;
     max-width: 1400px;
     margin: 0 auto 20px;
+    color: #2a56c6;
+    font-size: 1.8rem;
 }
 
 footer hr {
@@ -220,7 +223,7 @@ footer hr {
 }
 
 .contact-info a:hover {
-    color: #333;
+    color: #2a56c6;
     text-decoration: underline;
 }
 

@@ -10,6 +10,7 @@ body {
     color: #333;
     line-height: 1.6;
     background-image: linear-gradient(135deg, #f5f7fa 0%, #e4edf5 100%);
+    min-height: 100vh;
 }
 
 header {
@@ -54,6 +55,7 @@ header li a {
     text-decoration: none;
     color: black;
     font-weight: 600;
+    transition: background-color 0.3s;
 }
 
 header li a:hover,
@@ -61,17 +63,35 @@ header li a.active {
     background-color: #f4f4f4;
 }
 
-.content h1{
+.content {
+    max-width: 1400px;
+    margin: 40px auto;
+    padding: 60px 20px;
     text-align: center;
 }
+
+.content h1 {
+    text-align: center;
+    color: #2a56c6;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.content p {
+    text-align: center;
+    margin: 10px auto 30px;
+    font-size: 1.1rem;
+    color: #555;
+}
+
 .content button {
     display: block;
     margin: 0 auto;
+    background-color: transparent;
+    border: none;
+    padding: 0;
 }
-.content p{
-    text-align: center;
-    margin: 10px auto 20px;
-}
+
 @media (min-width: 48em) {
     header li {
         float: left;
@@ -85,26 +105,46 @@ header li a.active {
         max-height: none;
     }
 }
+
 .services {
-    padding: 20px 0;
-    margin: 0;
-    width: 100%;
+    max-width: 1400px;
+    margin: 40px auto;
+    padding: 20px;
     text-align: center;
 }
 
-.services h2, .about-us h2, .about-us p,.location h2 {
-
+.services h2, 
+.about-us h2, 
+.location h2 {
     text-align: left;
-    margin: 20px ;
+    margin: 20px;
+    color: #2a56c6;
+    font-size: 1.8rem;
 }
 
+.about-us,
+.location {
+    max-width: 1400px;
+    margin: 40px auto;
+    padding: 20px;
+}
 
+.about-us p {
+    text-align: left;
+    margin: 20px;
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.8;
+}
 
 .slideshow-container {
     max-width: 95%;
-    margin: 0 auto 0;
+    margin: 20px auto;
     text-align: center;
-    border: 1px solid #ccc;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
 }
 
 .slide-wrapper {
@@ -114,8 +154,11 @@ header li a.active {
     min-height: 300px;
     max-height: 700px;
 }
+
 hr {
-    margin: 20px;
+    margin: 20px auto;
+    max-width: 95%;
+    border: none;
     border-top: 2px solid #ddd;
 }
 
@@ -127,12 +170,12 @@ label {
     display: inline-block;
     width: 12px;
     height: 12px;
-    border: solid 2px #333;
+    border: solid 2px #2a56c6;
     border-radius: 999px;
     background-color: transparent;
     margin: 20px 6px;
     cursor: pointer;
-    transition-duration: .3s;
+    transition: all 0.3s;
     box-shadow: 0 0 10px 0 rgba(0,0,0,.2);
     position: absolute;
     bottom: 0;
@@ -140,9 +183,13 @@ label {
     text-align: center;
 }
 
+label:hover {
+    transform: scale(1.2);
+}
+
 .slide {
     position: absolute;
-    inset: 0;                      /* top:0; right:0; bottom:0; left:0; */
+    inset: 0;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -163,27 +210,29 @@ input:checked + label + .slide {
 }
 
 input:checked + label {
-    background-color: white;
+    background-color: #2a56c6;
 }
 
-
-
-.bg1{
+.bg1 {
     background-image: url(assets/athlete-standing-all-weather-running-track.jpg);
 }
-.bg2{
+
+.bg2 {
     background-image: url(assets/pexels-mart-production-8471819.jpg);
 }
-.bg3{
+
+.bg3 {
     background-image: url(assets/children-making-robot.jpg);
 }
-.bg4{
+
+.bg4 {
     background-image: url(assets/Photography-Banner.jpeg);
 }
-.bg5{
+
+.bg5 {
     background-image: url(assets/young-woman-painting-with-acrylics-home.jpg);
 }
-/* we used this method to center the labels because position absolute stacked them on top of each other*/
+
 #trigger1 + label {
     left: calc(50% - 48px);
 }
@@ -204,14 +253,21 @@ input:checked + label {
     left: calc(50% + 48px);
 }
 
-.location iframe{
+.location iframe {
     width: 95%;
-    margin: 30px 30px 0;
+    margin: 30px auto;
+    display: block;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
 }
-.location p{
-    margin: 0 30px;
-    color: grey;
+
+.location p {
+    margin: 0 20px 20px;
+    color: #666;
+    text-align: left;
+    font-size: 1rem;
 }
+
 footer {
     width: 100%;
     background-color: #f9f9f9;
@@ -223,6 +279,8 @@ footer h2 {
     text-align: left;
     max-width: 1400px;
     margin: 0 auto 20px;
+    color: #2a56c6;
+    font-size: 1.8rem;
 }
 
 footer hr {
@@ -258,9 +316,10 @@ footer hr {
 }
 
 .contact-info a:hover {
-    color: #333;
+    color: #2a56c6;
     text-decoration: underline;
 }
+
 .forum-btn {
     padding: 12px 40px;
     border: none;
@@ -278,9 +337,42 @@ footer hr {
 .forum-btn:hover {
     background-color: #1a3a8f;
     transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(42, 86, 198, 0.2);
+    box-shadow: 0 5px 15px rgba(42, 86, 198, 0.3);
 }
-button{
+
+button {
     border-style: none;
     background-color: transparent;
+    padding: 0;
+}
+
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    header li {
+        width: 100%;
+    }
+
+    header li a {
+        padding: 15px 0;
+    }
+
+    .content h1 {
+        font-size: 2rem;
+    }
+
+    .services h2,
+    .about-us h2,
+    .location h2,
+    footer h2 {
+        font-size: 1.5rem;
+    }
 }
